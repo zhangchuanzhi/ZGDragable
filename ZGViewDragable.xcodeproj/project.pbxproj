@@ -13,6 +13,7 @@
 		231FEB571F947CF600B056B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 231FEB561F947CF600B056B0 /* Assets.xcassets */; };
 		231FEB5A1F947CF600B056B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 231FEB581F947CF600B056B0 /* LaunchScreen.storyboard */; };
 		231FEB5D1F947CF600B056B0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 231FEB5C1F947CF600B056B0 /* main.m */; };
+		231FEB661F947F1000B056B0 /* UIView+ZGDragable.m in Sources */ = {isa = PBXBuildFile; fileRef = 231FEB651F947F1000B056B0 /* UIView+ZGDragable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,9 @@
 		231FEB591F947CF600B056B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		231FEB5B1F947CF600B056B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		231FEB5C1F947CF600B056B0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		231FEB631F947D1200B056B0 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		231FEB641F947F1000B056B0 /* UIView+ZGDragable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZGDragable.h"; sourceTree = "<group>"; };
+		231FEB651F947F1000B056B0 /* UIView+ZGDragable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZGDragable.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +66,14 @@
 				231FEB4E1F947CF600B056B0 /* AppDelegate.m */,
 				231FEB501F947CF600B056B0 /* ViewController.h */,
 				231FEB511F947CF600B056B0 /* ViewController.m */,
+				231FEB641F947F1000B056B0 /* UIView+ZGDragable.h */,
+				231FEB651F947F1000B056B0 /* UIView+ZGDragable.m */,
 				231FEB531F947CF600B056B0 /* Main.storyboard */,
 				231FEB561F947CF600B056B0 /* Assets.xcassets */,
 				231FEB581F947CF600B056B0 /* LaunchScreen.storyboard */,
 				231FEB5B1F947CF600B056B0 /* Info.plist */,
 				231FEB5C1F947CF600B056B0 /* main.m */,
+				231FEB631F947D1200B056B0 /* PrefixHeader.pch */,
 			);
 			path = ZGViewDragable;
 			sourceTree = "<group>";
@@ -143,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				231FEB521F947CF600B056B0 /* ViewController.m in Sources */,
+				231FEB661F947F1000B056B0 /* UIView+ZGDragable.m in Sources */,
 				231FEB5D1F947CF600B056B0 /* main.m in Sources */,
 				231FEB4F1F947CF600B056B0 /* AppDelegate.m in Sources */,
 			);
@@ -279,6 +287,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/ZGViewDragable/PrefixHeader.pch;
 				INFOPLIST_FILE = ZGViewDragable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = offcn.ZGViewDragable;
@@ -292,6 +302,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = $SRCROOT/ZGViewDragable/PrefixHeader.pch;
 				INFOPLIST_FILE = ZGViewDragable/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = offcn.ZGViewDragable;
